@@ -2,6 +2,7 @@
 
 const fullName = "Peter Heronimous Lind";
 
+//Grunden til jeg erklærer en first- og lastSpace varibel er for at kunne bruge mellemrummene til at opdele min "main string"
 //Erklærer en konstant variabel, som "tager fat i" det første ord før det første mellemrum. Opdele blandt mellemrummene
 const firstSpace = fullName.indexOf(" ");
 //Laver en substring der sørger for at jeg kan bruge det andet mellemrum som en seperator i min "main string"
