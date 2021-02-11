@@ -29,10 +29,4 @@ person2.firstName = "Also Changed";
 //person1 is now pointing to the same object as the other variables (person2 person3)-> all variables are pointing at the person2-object
 //the person1 object is now un-used and being removed because no variables are pointing at it -> the object is gone
 person1 = person3;
-console.log("Person 1:");
-console.log(person1);
-console.log("Person 2:");
-console.log(person2);
-console.log("Person 3:");
-console.log(person3);
 //console.log output: Assignment to constant variable
