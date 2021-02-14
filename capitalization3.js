@@ -10,7 +10,7 @@ const first = firstname.substring(0, 2).toLowerCase();
 //Characters at position 2 to 3 has to be written in uppercase
 const second = firstname.substring(2, 3).toUpperCase();
 
-//Characters at position 3 to 25has to be written in lowercase
+//Characters at position 3 to 5 has to be written in lowercase
 const third = firstname.substring(3, 5).toLowerCase();
 
 console.log(`${first}${second}${third}`);
