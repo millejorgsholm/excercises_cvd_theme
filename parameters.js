@@ -1,35 +1,40 @@
 "use strict";
 
 //Define firstName
-let myName = "Mille";
-let firstName = "Henrik";
-let lastName = "Bierrings";
+const firstName = "Henrik";
+const lastName = "Bierrings";
 
-//Calling the function with two parameters
-sayHello(firstName, lastName);
+//Calling the function
+sayHello("Henrik");
 
 //A function called sayHello recieves one parameter firstName
-function sayHello(parm1, parm2) {
-  console.log(`Hello my name is ${parm1} and my lastname is ${parm2}`);
+function sayHello(firstName) {
+  console.log(`Hello my name is ${firstName}`);
 }
+
+let myName = "Mille";
+sayHello(myName);
+
+sayHello(firstName, lastName);
+sayHello(lastName, firstName);
 
 //Writes Hello ${firstName} in the console
 
 //What happens if...
 //Q: The function is called on an earlier line that it is created?
-//A: Nothing happens, it is the same. It doesn't matter whether we call the function before or after we created it
+//A: Nothing happens, it is the same. It doesn't matter whether we call the function before or after we created it -> if it exists anywhere in the js file you can call it
 
 //Q: The function is called with a variable called myName?
-//A: It doesn't work. If the name of the variable changes, the parameter won't work until it's called the as the variable
+//A: It console.logs both "myName" and "firstName", because myName is a local variable
 
 //Q: There is another variable called firstName outside the function?
-//A: It will work again, because the variable is named the as the parameter is
+//A: It console.logs firstName because it uses the local variable and ignores the global variable
 
 //Q: The function is called without any parameter?
-//A: Nothing happens because the function requires to be called with a parameter
+//A: It will say "hello undefined" -> the variable is undefined because there's no parameter in the function
 
 //Q:The function is called with firstName and lastName
-//A: It works because we're declaring a variable called lastName and then calling the function with two parameters
+//A: It only calls "firstName", because in the console.log, it only recieves the parameter "firstName"
 
 //Q: And the function is called with lastName before firstName?
-//A: It switches the position so that lastName will appear before firstName in the console.log
+//A: It switches the position so that lastName will appear before firstName in the console.log -> the lastName parameter is called before firstName
