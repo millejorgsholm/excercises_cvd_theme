@@ -25,6 +25,8 @@ last is ${lastName}`);
 
 getNameParts();
 
+//The same assignment but instead we use parameters
+
 function fullName(lastName, firstName, middleName) {
   console.log(`Hello my name is ${lastName}, ${firstName}, ${middleName}`);
   const fullName = "Mille";
