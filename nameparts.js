@@ -1,5 +1,6 @@
 "use strict";
 
+//THE NAMEPARTS EXCERCISE
 function getNameParts(fullName) {
   fullName = "Peter Heronimous Lind";
 
@@ -25,10 +26,11 @@ last is ${lastName}`);
 
 getNameParts();
 
+//THE FULL NAME EXCERCISE
 //The same assignment but instead we use parameters
 
 function fullName(lastName, firstName, middleName) {
-  console.log(`Hello my name is ${lastName}, ${firstName}, ${middleName}`);
+  console.log(`${lastName}, ${firstName}, ${middleName}`);
   const fullName = "Mille";
   const firstSpace = fullName.indexOf(" ");
   const lastSpace = fullName.lastIndexOf(" ");
@@ -39,3 +41,9 @@ function fullName(lastName, firstName, middleName) {
 }
 
 fullName("Potter", "Harry", "James");
+
+fullName("Potter", "Harry");
+
+fullName("Harry", "Potter");
+
+fullName("Potter", "Harry", "James", "Pottypotpot");
