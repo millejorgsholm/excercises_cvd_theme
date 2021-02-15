@@ -7,11 +7,9 @@
 //Characters at position 1 to 5 (the rest of the letters) has to be written in lowercase
 
 function capitalize(str) {
-  const firstname = "Peter";
+  const firstname = "peTer";
   const first = firstname.substring(0, 1).toUpperCase();
-
   const second = firstname.substring(1, 5).toLowerCase();
   console.log(`${first}${second}`);
 }
-
 capitalize();
