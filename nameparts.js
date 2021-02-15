@@ -24,3 +24,16 @@ last is ${lastName}`);
 }
 
 getNameParts();
+
+function fullName(lastName, firstName, middleName) {
+  console.log(`Hello my name is ${lastName}, ${firstName}, ${middleName}`);
+  const fullName = "Mille";
+  const firstSpace = fullName.indexOf(" ");
+  const lastSpace = fullName.lastIndexOf(" ");
+
+  firstName = fullName.substring(0, firstSpace);
+  middleName = fullName.substring(firstSpace, lastSpace).trim();
+  lastName = fullName.substring(lastSpace);
+}
+
+fullName("Potter", "Harry", "James");
