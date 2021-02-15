@@ -22,7 +22,7 @@ const theaAnimalName = "Alfred";
 presentPet("myOtherName, myPet, theAnimalName");
 
 //Function called with strings
-presentPet("Signe", "cat2", "Alfred");
+presentPet("Signe", "cat", "Alfred");
 
 //Excercises: what if...
 //Q: The function is called with variables named the same as the parameters?
